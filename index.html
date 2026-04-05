@@ -31,15 +31,44 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11016039035">
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11016039035"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-11016039035');
+
+  function trackCall() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11016039035/sM_UCOrjyekbEIbB1r9C',
+      'value': 1.0,
+      'currency': 'INR'
+    });
+  }
 </script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11016039035">
+</script>
+
+<script>
+function trackCall() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11016039035/sM_UCOrjyekbEIbB1r9C',
+    'value': 1.0,
+    'currency': 'INR'
+  });
+}
+</script>
+
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11016039035');
+</script> -->
 </head>
 
 <body>
@@ -58,7 +87,7 @@
             <div class="h-100 d-inline-flex align-items-center me-4">
                 <small class="fa fa-phone-alt me-2"></small>
                 <small>           
-                    Call Us Directly: <a href="tel:+919574313130" class="text-white fw-bold">+919574313130</a>
+                    Call Us Directly: <a href="tel:+919574313130" class="text-white fw-bold" onclick="trackCall()">+919574313130</a>
 <!--                     <a href="tel:+919824333880" class="text-white">9824333880</a> -->
                 </small>
                 
